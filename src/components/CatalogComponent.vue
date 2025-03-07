@@ -1,5 +1,5 @@
 <template>
-    <div class="w-3/4 h-30 flex flex-row justify-center bg-[#F6EBDA] rounded-full px[10%] mx-[15%] p-3">
+    <div class="w-3/4 h-30 flex flex-row justify-center bg-[#F6EBDA] rounded-4xl px[10%] mx-[15%] p-3">
         <div class="w-1/4 flex flex-col justify-center text-center items-center">
             <img :src="iconHotCoffee" class="w-12 mb-2">
             <p>Hot Coffee</p>
@@ -17,7 +17,6 @@
             <p>Dessert</p>
         </div>
     </div>
-    <p>Cold Coffee</p>
 </template>
 <script>
 import HotCoffeePath from "@/assets/images/hot-coffee.png";
@@ -31,6 +30,7 @@ export default {
             iconDessertCoffee: DessertPath,
             iconColdCoffee: ColdCoffeePath,
             iconTea: TeaPath,
+            headingTitle: "Cold Coffee",
         }
     }
 }

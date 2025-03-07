@@ -1,5 +1,8 @@
 <template>
-    <div class="list-cards relative w-full grid grid-cols-4 justify-items-center items-center mt-[10%] ">
+    <div class="list-cards relative w-full grid grid-cols-4 justify-items-center items-center mt-[12%] ">
+        <div class="absolute top-[-15%] left-10">
+            <p class="text-3xl font-bold">Cold <u class="underline decoration-5 decoration-[#FFBD7F]">Coffee</u></p>
+        </div>
         <product-card v-for="x in listCards" :key="x.title" v-bind:card-images="x.image" v-bind:card-title="x.title"
             v-bind:card-content="x.content" v-bind:card-price="x.price"
             :class="['hover:bg-[#FFBD7F] hover:scale-110 transition-transform duration-500']"></product-card>

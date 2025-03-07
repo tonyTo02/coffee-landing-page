@@ -6,11 +6,11 @@
             </div>
             <div class="col-span-2 bg-[#fff] h-screen flex flex-col justify-center items-center pe-20">
                 <div>
-                    <p class="text-4xl mb-2 p-2 font-bold">The <bold class="font-bold text-[#FFBD7F]">coffee</bold> you
+                    <p class="text-4xl mb-2 p-2 font-bold">The <b class="font-bold text-[#FFBD7F]">coffee</b> you
                         will <br>
                         fall
                         in
-                        <bold class="font-bold text-[#FFBD7F]">love</bold> with
+                        <b class="font-bold text-[#FFBD7F]">love</b> with
                     </p>
                     <p class="mb-2 p-2">Sip, savor, and spread the love - where <br> every cup is a caffeinated hug at
                         our cozy <br> coffee heaven!

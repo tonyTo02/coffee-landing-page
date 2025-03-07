@@ -3,7 +3,7 @@
         <p class="w-1/4 align-middle flex justify-center">
             <img class="size-12" :src="logo" alt="Logo">
         </p>
-        <div class="w-2/4 grow flex justify-center">
+        <div class="w-2/4 grow justify-center flex">
             <p class="w-24 text-right content-center text-[#FFBD7F]">Home</p>
             <p class="w-24 text-right content-center">Menu</p>
             <p class="w-24 text-right content-center">Delivery</p>
@@ -42,7 +42,7 @@ export default {
     }
 }   
 </script>
-<style>
+<style scoped>
 p {
     cursor: pointer;
 }
