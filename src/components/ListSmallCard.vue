@@ -36,14 +36,13 @@ export default {
                 { image: MenuProduct7, isClicked: false, name: "Affogato", price: 11.40 },
                 { image: MenuProduct8, isClicked: false, name: "Cold Brew", price: 6.40 },
             ],
-            orderClicked: false,
         }
 
     },
     methods: {
         handleClicked(index) {
             this.listSmallCards.forEach((item, i) => {
-                item.isClicked = i === index; // Chỉ đổi trạng thái của card được nhấn
+                item.isClicked = i === index;
             });
         }
     }

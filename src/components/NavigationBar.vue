@@ -1,14 +1,21 @@
 <template>
-    <div class="navigation w-full flex flex-row justify-center px-[10%] z-30">
-        <p class="w-1/4 align-middle flex justify-center">
+    <div
+        class="navigation w-full flex items-center justify-items-start md:flex md:flex-row md:justify-center md:px-[10%] md:z-30">
+        <p class="w-1/4 md:align-middle md:flex md:justify-center md:w-1/4 justify-start flex">
             <img class="size-12" :src="logo" alt="Logo">
         </p>
-        <div class="w-2/4 grow justify-center flex">
+        <div class="placeholder w-1/4 block grow justify-items-end md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+        <div class="w-2/4 grow justify-center hidden md:flex">
             <p class="w-24 text-right content-center text-[#FFBD7F]">Home</p>
             <p class="w-24 text-right content-center">Menu</p>
             <p class="w-24 text-right content-center">Delivery</p>
         </div>
-        <div class="w-64 content-center bg-white flex flex-row rounded-full border-w-1 justify-center items-center p-2 ms-2 focus:outline-2 focus:outline-black focus:outline-offset-2"
+        <div class="w-64 content-center bg-white hidden md:flex md:flex-row rounded-full border-w-1 justify-center items-center p-2 ms-2 focus:outline-2 focus:outline-black focus:outline-offset-2"
             tabindex="0">
             <label for="search-bar" class="form-label sizre-6 content-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -21,7 +28,7 @@
             <input type="text" name="search-bar" id="search-bar" placeholder="Cold Brew"
                 class="w-3/4 focus:outline-none ms-3">
         </div>
-        <p class="w-24 text-right content-center ms-3">
+        <p class="w-24 text-right content-center ms-3 hidden md:block">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round"

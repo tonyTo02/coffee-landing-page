@@ -1,12 +1,13 @@
 <template>
-    <div class="list-cards relative w-full grid grid-cols-4 justify-items-center items-center mt-[12%] ">
-        <div class="absolute top-[-15%] left-10">
+    <div
+        class="md:list-cards md:relative md:w-full md:grid md:grid-cols-4 md:justify-items-center md:items-center md:mt-[12%] ">
+        <div class="md:absolute md:top-[-15%] md:left-10">
             <p class="text-3xl font-bold">Cold <u class="underline decoration-5 decoration-[#FFBD7F]">Coffee</u></p>
         </div>
         <product-card v-for="x in listCards" :key="x.title" v-bind:card-images="x.image" v-bind:card-title="x.title"
             v-bind:card-content="x.content" v-bind:card-price="x.price"
             :class="['hover:bg-[#FFBD7F] hover:scale-110 transition-transform duration-500']"></product-card>
-        <div class="prev-slide absolute left-0 p-3 text-[#835E4C] hover:scale-110 cursor-pointer
+        <div class="prev-slide md:absolute md:left-0 md:p-3 hover:scale-110 cursor-pointer
 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-8 bg-white rounded-full">
@@ -15,14 +16,13 @@
             </svg>
 
         </div>
-        <div class="next-slide absolute right-0 p-3">
+        <div class="next-slide md:absolute md:right-0 md:p-3 hover:scale-y-110">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-8 bg-white rounded-full text-[#835E4C] hover:scale-110 cursor-pointer
+                stroke="currentColor" class="size-8 bg-white rounded-full hover:scale-110 cursor-pointer
 ">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
             </svg>
-
         </div>
     </div>
 </template>

@@ -22,7 +22,7 @@ export default {
 <template>
     <div class="relative">
         <main-page></main-page>
-        <catalog-page class="absolute bottom-[-8%]" />
+        <catalog-page class="md:absolute md:bottom-[-8%]" />
     </div>
     <list-cards></list-cards>
     <ads-banner />

@@ -1,5 +1,6 @@
 <template>
-    <div class="w-3/4 h-30 flex flex-row justify-center bg-[#F6EBDA] rounded-4xl px[10%] mx-[15%] p-3">
+    <div
+        class="w-full h-70 p-12 gap-2 grid grid-cols-2 bg-[#F6EBDA] items-center justify-items-center md:w-3/4 md:h-30 md:flex md:flex-row md:justify-center md:bg-[#F6EBDA] md:rounded-4xl md:px[10%] md:mx-[15%] md:p-3">
         <div class="w-1/4 flex flex-col justify-center text-center items-center">
             <img :src="iconHotCoffee" class="w-12 mb-2">
             <p>Hot Coffee</p>
@@ -9,7 +10,7 @@
             <p>Cold Coffee</p>
         </div>
         <div class="w-1/4 flex flex-col justify-center text-center items-center">
-            <img :src="iconTea" class="w-12 mb-2 ms-1">
+            <img :src="iconTea" class="w-12 mb-2">
             <p>Tea</p>
         </div>
         <div class="w-1/4 flex flex-col justify-center text-center items-center">

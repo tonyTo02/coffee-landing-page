@@ -1,10 +1,15 @@
 <template>
-    <div class="w-full h-screen relative">
-        <div class="grid grid-cols-3">
-            <div class="absolute  w-full mt-6">
+    <div class="w-full md:h-screen md:relative relative">
+        <div class="md:grid md:grid-cols-3 grid grid-cols-2">
+            <div class="md:absolute md:w-full mt-6 absolute w-full">
                 <navigation-bar />
             </div>
-            <div class="col-span-2 bg-[#fff] h-screen flex flex-col justify-center items-center pe-20">
+            <div class="md:hidden h-90 bg-white">
+            </div>
+            <div class="md:hidden h-90 bg-[#FFBD7F]">
+            </div>
+            <div
+                class="col-span-2 h-80 p-12 md:col-span-2 md:bg-[#fff] md:h-screen md:flex md:flex-col md:justify-center md:items-center md:pe-20">
                 <div>
                     <p class="text-4xl mb-2 p-2 font-bold">The <b class="font-bold text-[#FFBD7F]">coffee</b> you
                         will <br>
@@ -20,10 +25,10 @@
                     </button>
                 </div>
             </div>
-            <div class="bg-[#FFBD7F] h-screen z-[-1]">
-                <img :src="backgroundImage" class="absolute right-0 top-0">
+            <div class="md:bg-[#FFBD7F] md:h-screen md:z-[-1]">
+                <img :src="backgroundImage" class="hidden md:absolute md:right-0 md:top-0 md:block">
             </div>
-            <div class="absolute w-90 top-[30%] left-[60%]">
+            <div class="md:absolute md:w-90 md:top-[30%] md:left-[60%] absolute w-50 left-[30%] top-20">
                 <img :src="CupCoffeeImage" class="rounded-full">
             </div>
         </div>
