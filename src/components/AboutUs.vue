@@ -1,7 +1,7 @@
 <template>
     <div
         class="container flex flex-col md:flex-row md:justify-center w-full h-180 md:h-132 bg-[#F6EBDA] md:p-15 md:items-center">
-        <div class="image p-2 rounded-2xl md:mx-4 bg-white w-100 shadow-xl ms-10 mt-10">
+        <div class="image p-2 rounded-2xl md:mx-4 bg-white w-100 md:w-full shadow-xl md:ms-0 md:mt-0 ms-10 mt-10">
             <img :src="image" class="rounded-2xl w-full" alt="image-about-us">
         </div>
         <div class="content md:px-30 px-10">
