@@ -6,7 +6,7 @@
         <div class="title w-1/2 px-2">
             <p class="font-bold text-2xl text-[#2F2105]">CoffeeLove</p>
         </div>
-        <div class="social-media grow justify-items-center">
+        <div class="md:social-media md:grow md:justify-items-center hidden">
             <div class="wrap flex flex-row">
                 <img class="p-3" :src="facebookIcon" alt="facebook">
                 <img class="p-3" :src="instagramIcon" alt="instagram">
@@ -14,19 +14,26 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-row items-center px-[15%] pb-20">
+    <div class="flex md:flex-row items-center md:px-[15%] md:pb-20 flex-col">
         <div class="navigation text-[#835E4C] w-[80%]">
             <p class="py-1.5">HOME</p>
             <p class="py-1.5">MENU</p>
             <p class="py-1.5">DELIVERY</p>
             <p class="py-1.5">LOCATIONS</p>
         </div>
-        <div class="subscribe w-2/3">
-            <label for="email" class="font-bold text-[#2F2105]">Newsletter</label>
+        <div class="subscribe w-[80%] mt-2">
+            <label for="email" class="font-bold text-2xl text-[#2F2105]">Newsletter</label>
             <div class="wrap flex flex-row pt-4 items-center">
                 <input type="text" name="email" id="email" class="bg-[#F6EBDA] text-[#835E4C] p-4"
                     placeholder="Your Email">
                 <button class="bg-[#835E4C] w-30 p-4 text-center text-white">Subscribe</button>
+            </div>
+        </div>
+        <div class="social-media grow justify-items-center py-10 md:hidden">
+            <div class="wrap flex flex-row">
+                <img class="p-3" :src="facebookIcon" alt="facebook">
+                <img class="p-3" :src="instagramIcon" alt="instagram">
+                <img class="p-3" :src="twitterIcon" alt="twitter">
             </div>
         </div>
     </div>

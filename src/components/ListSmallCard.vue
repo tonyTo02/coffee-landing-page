@@ -1,12 +1,14 @@
 <template>
-    <div class="container px-[10%] py-5">
-        <div class="py-10 ps-2">
+    <div class="container h-screen md:py-5">
+        <div class="py-10 ps-4">
             <p class="font-bold text-2xl">Special menu <span class="underline decoration-4 decoration-[#FFBD7F]">for
                     you</span></p>
         </div>
-        <div class="list-small-card-product w-full grid grid-cols-4 gap-4 justify-items-center">
+        <div
+            class="list-small-card-product ms-40 w-full md:ms-0 grid grid-cols-4 gap-x-[60%] gap-4 md:gap-2 justify-items-center">
             <small-card v-for="(x, index) in listSmallCards" :key="index" v-bind:image="x.image" v-bind:name="x.name"
-                v-bind:price="x.price" :class="{ 'bg-[#FFBD7F]': x.isClicked }" @order-clicked="handleClicked(index)" />
+                v-bind:price="x.price" :class="[, { 'bg-[#FFBD7F]': x.isClicked }]"
+                @order-clicked="handleClicked(index)" />
         </div>
     </div>
 </template>

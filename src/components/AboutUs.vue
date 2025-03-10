@@ -1,9 +1,10 @@
 <template>
-    <div class="container flex flex-row justify-center w-full h-132 bg-[#F6EBDA] p-15 items-center">
-        <div class="image p-2 rounded-2xl mx-4 bg-white w-full shadow-xl">
+    <div
+        class="container flex flex-col md:flex-row md:justify-center w-full h-180 md:h-132 bg-[#F6EBDA] md:p-15 md:items-center">
+        <div class="image p-2 rounded-2xl md:mx-4 bg-white w-100 shadow-xl ms-10 mt-10">
             <img :src="image" class="rounded-2xl w-full" alt="image-about-us">
         </div>
-        <div class="content px-30">
+        <div class="content md:px-30 px-10">
             <p class="text-2xl font-bold py-5">About <span class="underline decoration-3 decoration-[#FFBD7F]">Us</span>
             </p>
             <p class="text-xl font-bold py-5">Sip into Perfection</p>

@@ -20,7 +20,8 @@
                     <p class="mb-2 p-2">Sip, savor, and spread the love - where <br> every cup is a caffeinated hug at
                         our cozy <br> coffee heaven!
                     </p>
-                    <button class="w-36 h-10 p-2 rounded-full bg-[#2F2105] text-base text-[#fff] active:bg-[#835E4C]">
+                    <button
+                        class="w-36 h-10 p-2 rounded-full bg-[#2F2105] text-base text-[#fff] active:bg-[#835E4C] transition-colors">
                         Order now
                     </button>
                 </div>

@@ -1,13 +1,21 @@
 <template>
-    <div
-        class="md:list-cards md:relative md:w-full md:grid md:grid-cols-4 md:justify-items-center md:items-center md:mt-[12%] ">
-        <div class="md:absolute md:top-[-15%] md:left-10">
+    <div class="list-cards relative w-full justify-items-center items-center md:mt-[12%]">
+        <div class="absolute md:top-[-6rem] md:left-10 top-[-4rem] left-10 p-4">
             <p class="text-3xl font-bold">Cold <u class="underline decoration-5 decoration-[#FFBD7F]">Coffee</u></p>
         </div>
-        <product-card v-for="x in listCards" :key="x.title" v-bind:card-images="x.image" v-bind:card-title="x.title"
-            v-bind:card-content="x.content" v-bind:card-price="x.price"
-            :class="['hover:bg-[#FFBD7F] hover:scale-110 transition-transform duration-500']"></product-card>
-        <div class="prev-slide md:absolute md:left-0 md:p-3 hover:scale-110 cursor-pointer
+        <swiper class="mt-15 w-full px-[10%]" :slides-per-view="2" :loop="true" :space-between="200" :grabCursor="true"
+            :breakpoints="{
+                1024: { slidesPerView: 2, spaceBetween: 10, centeredSlides: false },
+                1280: { slidesPerView: 4, spaceBetween: 10, centeredSlides: false }
+            }">
+            <swiper-slide v-for="x in listCards" :key="x.title">
+                <product-card v-bind:card-images="x.image" v-bind:card-title="x.title" v-bind:card-content="x.content"
+                    v-bind:card-price="x.price"
+                    class="hover:bg-[#FFBD7F] hover:scale-105 transition-transform duration-500">
+                </product-card>
+            </swiper-slide>
+        </swiper>
+        <!-- <div class="prev-slide md:absolute md:left-0 md:p-3 hover:scale-110 cursor-pointer
 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="size-8 bg-white rounded-full">
@@ -23,7 +31,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
             </svg>
-        </div>
+        </div> -->
     </div>
 </template>
 <script>
@@ -32,9 +40,14 @@ import MenuItemPath1 from '@/assets/images/menu_item_1.png';
 import MenuItemPath2 from '@/assets/images/menu_item_2.png';
 import MenuItemPath3 from '@/assets/images/menu_item_3.png';
 import MenuItemPath4 from '@/assets/images/menu_item_4.png';
+import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/vue";
+
 export default {
     components: {
         "product-card": ProductCard,
+        Swiper, SwiperSlide,
+
     }, data() {
         return {
             listCards: [{

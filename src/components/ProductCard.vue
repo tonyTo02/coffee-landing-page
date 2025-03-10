@@ -1,5 +1,5 @@
 <template>
-    <div class="card w-80 h-118 relative bg-[#835E4C] text-white rounded-3xl shadow-4xl p-5">
+    <div class="card w-80 h-118 relative bg-[#835E4C] text-white rounded-3xl shadow-4xl p-5 m-5">
         <div class="img w-full flex justify-center">
             <img :src="cardImages" alt="product images">
         </div>
