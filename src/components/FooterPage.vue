@@ -6,7 +6,7 @@
         <div class="title w-1/2 px-2">
             <p class="font-bold text-2xl text-[#2F2105]">CoffeeLove</p>
         </div>
-        <div class="md:social-media md:grow md:justify-items-center hidden">
+        <div class="md:social-media md:grow md:justify-items-center hidden md:block">
             <div class="wrap flex flex-row">
                 <img class="p-3" :src="facebookIcon" alt="facebook">
                 <img class="p-3" :src="instagramIcon" alt="instagram">
